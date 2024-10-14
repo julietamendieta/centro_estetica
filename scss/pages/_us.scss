@@ -1,0 +1,32 @@
+.us-title{
+    font-size: 100px;
+    color: var(--secondary-color);
+    text-align: center;
+    @include media-query-mobile(){
+        display: none;
+    }
+}
+
+.us-text{
+    font-size: 30px;
+    color: var(--secondary-color);
+    padding: 60px;
+    @include media-query-mobile(){
+        font-size: 20px;
+        padding: 0 30px;
+    }
+}
+
+.us-img{
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    margin-bottom: 20px;
+    @include media-query-mobile(){
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        margin-bottom: 10;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,97 @@
+.treatment-type-link{
+    color: var(--secondary-color);
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.treatment-type{
+    color: var(--secondary-color);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    @include media-query-mobile(){
+        margin-top: 20px;
+    }
+}
+
+.treatments-buttons-list{
+    display: flex;
+    justify-content: center;
+    margin: 2% 5% 0 5%;
+    .treatment-button{
+        color: var(--secondary-color);
+        background-color: var(--main-color);
+        border: 1px solid var(--secondary-color);
+        border-bottom: none;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 12px 24px;
+        margin: 0 20px 0 20px;
+        @include media-query-mobile(){
+            padding: 4px 8px;
+            margin: 0 5px 5px 5px;
+            border: 1px solid var(--secondary-color);
+            border-radius: 10px;
+        }
+    }
+    @include media-query-mobile(){
+        flex-wrap: wrap;
+    }
+    .active{
+        color: var(--main-color);
+        background-color: var(--secondary-color);
+    }
+}
+
+.treatment-detail{
+    background-color: var(--main-color);
+    #treatment-title{
+        color: var(--secondary-color);
+        font-size: 60px;
+        text-align: center;
+        padding-bottom: 30px;
+        @include media-query-mobile(){
+            font-size: 36px;
+            padding: 20px;
+        }
+    }
+    #treatment-description{
+        color: var(--secondary-color);
+        font-size: 30px;
+        padding: 0 10% 5% 10%;
+        @include media-query-mobile(){
+            font-size: 20px;
+        }
+    }
+    #treatment-imgs{
+        display: flex;
+        justify-content: center;
+        .treatment-img{
+            width: 400px;
+            height: 400px;
+            border-radius: 200px;
+            margin: 0 20px 30px 20px;
+            @include media-query-mobile(){
+                width: 300px;
+                height: 300px;
+                border-radius: 150px;
+                &:last-of-type{
+                    display: none;
+                }
+                &:first-of-type{
+                    display: none;
+                }
+            }
+            @include media-query-tablet(){
+                width: 300px;
+                height: 300px;
+                border-radius: 150px;
+                &:first-of-type{
+                    display: none;
+                }
+            }
+        }
+    }
+}
